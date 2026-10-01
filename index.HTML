@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimpi yang Terus Berjalan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div>✦ Cerpen</div>
+        <div>Mimpi yang Terus Berjalan</div>
+    </header>
+
+    <main>
+        <!-- Halaman 1 (Cover) -->
+        <div class="page active" data-page="1">
+            <section>
+                <div>✦</div>
+                <p>CERPEN</p>
+                <h1>Mimpi yang<br>Terus Berjalan</h1>
+                <div class="divider"></div>
+                <p>Sebuah cerita tentang keberanian untuk mencoba, belajar, dan tidak menyerah.</p>
+                <p>Oleh: <strong>Ramania Syahla</strong></p>
+            </section>
+        </div>
+
+        <!-- Halaman 2 -->
+        <div class="page" data-page="2">
+            <h2>Bab 1: Mimpi yang Tersembunyi</h2>
+            <p>Isi cerita halaman 2 tulis di sini...</p>
+        </div>
+
+        <!-- Halaman 3 (Tambahkan sampai halaman 15 dengan struktur yang sama) -->
+        <div class="page" data-page="3">
+            <h2>Bab 1: Lanjutan</h2>
+            <p>Isi cerita halaman 3 tulis di sini...</p>
+        </div>
+        
+        <!-- Ulangi div.page dengan data-page="4" sampai "15" sesuai kebutuhan -->
+    </main>
+
+    <!-- Tombol Navigasi -->
+    <nav class="pagination-nav">
+        <button id="prev-btn" onclick="ubahHalaman(-1)">Sebelumnya</button>
+        <div>
+            <span id="current-page">1</span> / <span id="total-pages">15</span>
+        </div>
+        <button id="next-btn" onclick="ubahHalaman(1)">Selanjutnya</button>
+    </nav>
+
+    <footer>
+        <p>Mimpi yang Terus Berjalan</p>
+        <p>Terus belajar • Terus mencoba • Terus berkembang</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
