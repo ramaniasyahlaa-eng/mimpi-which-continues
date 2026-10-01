@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    border-top: 1px solid #ddd;
+    border-bottom: none;
+    margin-top: auto;
+}
+
+main {
+    flex: 1;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Semua halaman disembunyikan secara default */
+.page {
+    display: none;
+}
+
+/* Hanya halaman dengan kelas 'active' yang akan muncul */
+.page.active {
+    display: block;
+}
+
+.pagination-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+}
+
+.pagination-nav button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.pagination-nav button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
